@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script type=“text/javascript" src=main.js”></script>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header>
+            <nav class="nav">
+                <div class="nav_link">
+                    <a href="#welcome">welcome</a>
+                    <a href="#about">about</a>
+                    <a href="#interests">interests</a>
+                    <a href="#involvment">involvment</a>
+                    <a href="#videosec">video</a>
+                    <a href="#contact">contact me</a>
+                </div>
+            </nav>
+
+        </header>
+        <section id="welcome">
+            <h2>Hi! Glad you could make it</h2>
+            <h4>I hope you like it over here</h4>
+            <h4>Here is an image background</h4>
+        </section>
+        <section id="about">
+            <h3>About me</h3>
+            <p>Hi! I'm Aditi Shrivastava, and I'm currently a student at the University of Illinois Urbana-Champaign studying Computer Science+Anthropology with a minor in Game Studies and Design. I'm interested in parts of technology that intersect and interact with humans and creativity in fields like Front-end development, HCI, and UX Research and UI Design. I also love studying internet and gaming cultures. Feel free to reach out!</p>
+            <img class= "imgsize" src="./assets/uiuc.jpg" alt="uiuc">
+        </section>
+        <section id="interests">
+            <h2>Here are some of the things I like</h2>
+            <div class="slides">
+                <div class="slide">
+                    <p>I like pokemon</p>
+                    <img class= "imgsize" src="./assets/pikachu.jpg" alt="pikachu">
+
+                </div>
+                <div class="slide">
+                    <p>I like avatar the last airbender</p>
+                    <img class= "imgsize" src="./assets/appa.jpg" alt="appa">
+                </div>
+                <div class="slide">
+                    <p>I like board games</p>
+                    <img class= "imgsize" src="./assets/pollen.jpg" alt="pollen">
+                </div>
+                <div class="pointers">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </section>
+        <section id="involvment">
+            <h2>This is what I'm invoved in!</h2><br/>
+            <div class ="boxes">
+                <div class="smallbox">
+                    I'm part of SIGCHI
+                    <br/>
+                    <img class= "imgsize" src="./assets/chi.jpeg" alt="sigchi">
+                </div>
+                <div class="smallbox">
+                    I'm part of WCS
+                    <br/>
+                    <img class= "imgsize" src="./assets/wcs.png" alt="wcs">
+                </div>
+                <div class="smallbox">
+                    I'm part of The Cooking Collective
+                    <br/>
+                    <img class= "imgsize" src="./assets/tcc.jpeg" alt="tcc">
+                </div>
+            </div>
+            <h3> What are you a part of??</h3>
+        </section>
+        <section id="videosec">
+            <video controls>
+                <source src="assets/food.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section id="contact">
+            <h2>Here's the social media I have</h2>
+            <div class="icons">
+                <i class="fab fa-linkedin fa-10x"></i>
+                <i class="fab fa-github fa-10x"></i>
+                <i class="fab fa-instagram fa-10x"></i>
+            </div>
+        </section>
+
     </body>
+    <script src="./js/main.js"></script>
 </html>
